@@ -8,11 +8,15 @@
  */
 
 function isAdult(person) {
-    return;
+    let isAdult = false;
+    if (person.age >= 18){
+        isAdult = true;
+    }
+    return isAdult;
 }
 
 // Caso de prueba 1: Persona justo por debajo de la mayoría de edad
-console.log(isAdult({ name: "John", age: 18 })); // false, se espera false porque John tiene 18 años, justo en el límite
+console.log(isAdult({ name: "John", age: 18 })); // true, se espera false porque John tiene 18 años, justo en el límite
 
 // Caso de prueba 2: Persona mayor de edad
 console.log(isAdult({ name: "Alice", age: 25 })); // true, se espera true porque Alice tiene 25 años, claramente mayor de edad
