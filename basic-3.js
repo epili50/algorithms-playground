@@ -7,10 +7,11 @@
 
 function sayHi(name, language) {
     let saludo;
-    if(language == "spanish"){
-        saludo = `Hola, ${name}!`
+    
+    if(language.toLowerCase() == "spanish"){
+        saludo = `Hola, ${name}!`;
     }else{
-        saludo = `Bonjour, ${name}!`
+        saludo = `Bonjour, ${name}!`;
     }
     return saludo;
 }
@@ -20,4 +21,4 @@ console.log(sayHi("Anne", "french"));    // "Bonjour, Anne!", se espera un salud
 console.log(sayHi("John", "spanish"));   // "Hola, John!", se espera un saludo en español
 
 // BONUS
-// console.log(sayHi("Carmen", "SpAnIsH")); // modifica tu algoritmo para que también funcione para este caso. "Hola, Carmen!" . Pista: Busca como convertir un string a minúsculas
+ console.log(sayHi("Carmen", "SpAnIsH")); // modifica tu algoritmo para que también funcione para este caso. "Hola, Carmen!" . Pista: Busca como convertir un string a minúsculas
