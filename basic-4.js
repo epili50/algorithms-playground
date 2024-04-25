@@ -6,6 +6,8 @@
 
 function euroToYen(euros) {
     let conversion_rate = 163.4;
+    conversion = euros * conversion_rate;
+    return conversion;
 }
 
 console.log(euroToYen(0));     // 0, se espera 0 porque 0 euros equivalen a 0 yenes

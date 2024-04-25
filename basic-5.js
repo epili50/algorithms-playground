@@ -9,7 +9,12 @@
  */
 
 function canWeMakePairs(names) {
-    return;
+    let sonPares = false;
+    
+    if(names.length % 2 == 0){
+        sonPares = true;
+    }
+    return sonPares;
 }
 
 console.log(canWeMakePairs(["Alice", "Bob", "Charlie", "David"])); // true, se espera true porque hay 4 personas (número par)
