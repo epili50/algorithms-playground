@@ -6,12 +6,18 @@
  */
 
 function sayHi(name, language) {
-    return;
+    let saludo;
+    if(language == "spanish"){
+        saludo = `Hola, ${name}!`
+    }else{
+        saludo = `Bonjour, ${name}!`
+    }
+    return saludo;
 }
 
 console.log(sayHi("Carlos", "spanish")); // "Hola, Carlos!", se espera un saludo en español
 console.log(sayHi("Anne", "french"));    // "Bonjour, Anne!", se espera un saludo en francés
-console.log(sayHi("John", "english"));   // "Hola, John!", se espera un saludo en español
+console.log(sayHi("John", "spanish"));   // "Hola, John!", se espera un saludo en español
 
 // BONUS
 // console.log(sayHi("Carmen", "SpAnIsH")); // modifica tu algoritmo para que también funcione para este caso. "Hola, Carmen!" . Pista: Busca como convertir un string a minúsculas
