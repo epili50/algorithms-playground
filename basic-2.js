@@ -8,7 +8,13 @@
  */
 
 function isAdultInCountry(age, country) {
-    return;
+    let esMayorDeEdad = false; 
+    if(age >= 21){
+        esMayorDeEdad = true;
+    }else if(age >=18 && country =="España"){
+        esMayorDeEdad = true;
+    }
+    return esMayorDeEdad;
 }
 
 console.log(isAdultInCountry(17, "España")); // false, se espera false porque 17 es menor de 18 años
